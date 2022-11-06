@@ -1,0 +1,170 @@
+@media screen and (min-width: 1280px) {
+    .container {
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        grid-template-rows: 25% 1fr 25%;
+        grid-template-areas: "header header header header" 
+                            "content content content sidebar"
+                            "content content content sidebar"
+                            "footer1 footer2 footer3 footer4";
+        background-color: rgb(209, 192, 192);
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: content;
+        align-content: space-between;
+        gap: 10px;
+        background-color: rgb(233, 197, 203);
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: rgb(127, 155, 127);
+    }
+
+    .footer1 {
+        grid-area: footer1;
+        height: 70px;
+    }
+
+    .footer2 {
+        grid-area: footer2;
+        height: 70px;
+    }
+
+    .footer3 {
+        grid-area: footer3;
+        height: 70px;
+    }
+
+    .footer4 {
+        grid-area: footer4;
+        height: 70px;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        background-color: bisque;
+        justify-self: center;
+        margin: 10px;
+    }
+
+    .part1, 
+    .part2,
+    .part3 {
+        background-color: rgb(211, 142, 197);
+        height: 20%;
+    }
+
+    .part1 {
+        width: 50%;
+    }
+
+    .part2 {
+        width: 50%;
+    }
+
+    .part3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 25% 1fr 25%;
+        grid-template-areas: "header header" 
+                            "content content"
+                            "sidebar sidebar";
+        background-color: rgb(209, 192, 192);
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .footer1, 
+    .footer2,
+    .footer3,
+    .footer4 {
+        display: none;
+    }   
+
+    .header {
+        height: 33vh;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    .sidebar {
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1279px) {
+    .container {
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        grid-template-rows: 25% 1fr 25%;
+        grid-template-areas: "header header header" 
+                            "content content sidebar"
+                            "content content sidebar";
+        background-color: rgb(209, 192, 192);
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .footer1, 
+    .footer2,
+    .footer3,
+    .footer4 {
+        display: none;
+    }   
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: content;
+        align-content: space-between;
+        gap: 10px;
+        background-color: rgb(233, 197, 203);
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: rgb(127, 155, 127);
+    }
+
+    .part1, 
+    .part2,
+    .part3 {
+        background-color: rgb(211, 142, 197);
+        height: 20%;
+    }
+
+    .part1 {
+        width: 50%;
+    }
+
+    .part2 {
+        width: 50%;
+    }
+
+    .part3 {
+        width: 100%;
+    }
+}

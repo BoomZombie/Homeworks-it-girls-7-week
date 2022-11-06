@@ -1,0 +1,78 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 150vh;
+    grid-template-rows: 25% 1em 25%;
+    grid-template-areas: "header header header header" 
+                        "content content content sidebar"
+                        "content content content sidebar"
+                        "footer1 footer2 footer3 footer4";
+    background-color: rgb(209, 192, 192);
+    text-align: center;
+    row-gap: 5vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+    align-content: space-between;
+    gap: 10vh;
+    background-color: rgb(233, 197, 203);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(127, 155, 127);
+}
+
+.footer1 {
+    grid-area: footer1;
+    height: 10vh;
+}
+
+.footer2 {
+    grid-area: footer2;
+    height: 10vh;
+}
+
+.footer3 {
+    grid-area: footer3;
+    height: 10vh;
+}
+
+.footer4 {
+    grid-area: footer4;
+    height: 10vh;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+    background-color: bisque;
+    justify-self: center;
+}
+
+.part1, 
+.part2,
+.part3 {
+    background-color: rgb(214, 187, 137);
+}
+
+.part1 {
+    width: 50%;
+    height: 10vh;
+}
+
+.part2 {
+    width: 50%;
+    height: 10vh;
+}
+
+.part3 {
+    width: 100%;
+    height: 10vh;
+}
